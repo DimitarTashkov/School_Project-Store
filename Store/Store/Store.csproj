@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F514A12-279E-43F3-9E4C-8681C7636BC5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Store</RootNamespace>
+    <AssemblyName>Store</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalog.Designer.cs">
+      <DependentUpon>Catalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Checkout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checkout.Designer.cs">
+      <DependentUpon>Checkout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diary.Designer.cs">
+      <DependentUpon>Diary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fruits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fruits.Designer.cs">
+      <DependentUpon>Fruits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Snacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Snacks.Designer.cs">
+      <DependentUpon>Snacks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sweets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sweets.Designer.cs">
+      <DependentUpon>Sweets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserData.cs" />
+    <Compile Include="Vegetables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vegetables.Designer.cs">
+      <DependentUpon>Vegetables.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Catalog.resx">
+      <DependentUpon>Catalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checkout.resx">
+      <DependentUpon>Checkout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diary.resx">
+      <DependentUpon>Diary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fruits.resx">
+      <DependentUpon>Fruits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Snacks.resx">
+      <DependentUpon>Snacks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sweets.resx">
+      <DependentUpon>Sweets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vegetables.resx">
+      <DependentUpon>Vegetables.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T67uPR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DairyyItems.txt" />
+    <Content Include="FruitsItems.txt" />
+    <Content Include="SnacksItems.txt" />
+    <Content Include="SweetsItems.txt" />
+    <Content Include="VegetablesItems.txt" />
+    <None Include="Resources\milk3.jpg" />
+    <None Include="Resources\milk1.jpg" />
+    <None Include="Resources\milk2.jpg" />
+    <Content Include="Costs.txt" />
+    <None Include="Resources\sirene.jpg" />
+    <None Include="Resources\sirene1.jpg" />
+    <None Include="Resources\sirene2.jpg" />
+    <None Include="Resources\yogurth1.jpg" />
+    <None Include="Resources\yogurth2.jpg" />
+    <None Include="Resources\tomatoes1.jpg" />
+    <None Include="Resources\carrots.jpg" />
+    <None Include="Resources\cucumbers.jpg" />
+    <None Include="Resources\potatoes.jpg" />
+    <None Include="Resources\lettuce.jpg" />
+    <None Include="Resources\beans.jpg" />
+    <None Include="Resources\peppers.jpg" />
+    <None Include="Resources\apple.jpg" />
+    <None Include="Resources\pears.jpg" />
+    <None Include="Resources\orange.jpg" />
+    <None Include="Resources\peach.jpg" />
+    <None Include="Resources\cherry.jpg" />
+    <None Include="Resources\avocado.jpg" />
+    <None Include="Resources\watermelon.jpg" />
+    <None Include="Resources\svoge.jpg" />
+    <None Include="Resources\milka.jpg" />
+    <None Include="Resources\lindor.jpg" />
+    <None Include="Resources\borovec.jpg" />
+    <None Include="Resources\mura.jpg" />
+    <None Include="Resources\prestige.jpg" />
+    <None Include="Resources\suchard.jpg" />
+    <None Include="Resources\sezoni.jpg" />
+    <None Include="Resources\merci.jpg" />
+    <None Include="Resources\ruffles.jpg" />
+    <None Include="Resources\pringles.jpg" />
+    <None Include="Resources\doritos.jpg" />
+    <None Include="Resources\bireni.jpg" />
+    <None Include="Resources\pecheni.jpg" />
+    <None Include="Resources\kashu.jpg" />
+    <None Include="Resources\traqna.jpg" />
+    <None Include="Resources\rumi.jpg" />
+    <None Include="Resources\belvita.gif" />
+    <Content Include="userss.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
